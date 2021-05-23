@@ -48,6 +48,12 @@
   {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
    :main-opts  ["-m" "rebel-readline.main"]}
 
+  ;; clojure -M:repl/data
+  :repl/data
+  {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}
+                cheshire {:mvn/version "5.10.0"}
+                org.clojure/data.csv {:mvn/version "1.0.0"}}
+   :main-opts  ["-m" "rebel-readline.main"]}
 
   ;; ClojureScript REPL - starts the default CLJS repl
   ;; https://github.com/bhauman/rebel-readline/tree/master/rebel-readline-cljs
